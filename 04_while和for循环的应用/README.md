@@ -232,3 +232,17 @@ while i < 10:
 - [ ] 熟练掌握 `continue`
 - [ ] 能独立排查死循环
 - [ ] 完成 `for` 循环部分
+## for 循环部分
+## 一、基础语法
+- 写法固定
+- for 临时变量 in 待处理的数据集（序列）
+循环满足条件时执行的代码
+- for循环无法定义循环条件，只能被动处理数据
+## 二、range语句
+1、range(num) 获得一个从0开始到num结束的数字序列,不包含num
+2、range（num1,num2）获得一个从num1开始到num2结束的数字序列,不包含num2
+2、range（num1,num2，step）获得一个从num1开始到num2结束的数字序列,不包含num2
+## 三、for循环的嵌套应用
+for循环可以进行嵌套，也可以和while循环组合嵌套使用
+## 注意空格缩进
+## 四、continue和break
