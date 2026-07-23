@@ -1,44 +1,49 @@
-# 通过index方法取到元素的下标值
-mylist = ['itheima','itcast','python']
-mylist2 = [1,2,3]
-index = mylist.index('itheima')
-print(f"itheima的元素下标是{index}")
+# 定义列表
+name_list = ["itheima", "itcast", "python"]
 
-# 修改特定下标索引的值
-mylist[1] = "传智教育"
-print(mylist)
+# 查看列表和数据类型
+print(name_list)
+print(type(name_list))
 
-# 在指定下标位置插入元素
-mylist.insert(0,"best")
-print(mylist)
+# 获取列表长度
+print(f"列表长度：{len(name_list)}")
 
-# 列表中追加元素
-mylist.append("黑马程序员")
-print(mylist)
+# 正数下标
+print(f"第一个元素：{name_list[0]}")
 
-# 将其他的数据容器追加到指定列表尾部
-mylist.extend(mylist2)
-print(mylist)
+# 负数下标
+print(f"最后一个元素：{name_list[-1]}")
 
-# 删除列表元素
-del mylist[4] # 通过del+列表下标删除
-print(mylist)
+# 修改元素
+name_list[1] = "传智教育"
+print(name_list)
 
-mylist2.pop(2) # 通过列表方法pop删除
-print(mylist2)
-print(mylist)
+# 指定位置插入
+name_list.insert(0, "best")
+print(name_list)
 
-mylist3 = [1,1,2,2,3,3,4,4,5,5,6,6]
+# 追加单个元素
+name_list.append("黑马程序员")
+print(name_list)
 
-# 删除某一个元素在列表中的第一个匹配项
-mylist3.remove(1)
-print(mylist3)
+# 追加多个元素
+name_list.extend(["Python", "Git"])
+print(name_list)
 
-# 清空列表内容
-mylist3.clear()
-print(mylist3)
+# 查询元素下标
+if "python" in name_list:
+    index = name_list.index("python")
+    print(f"python 的下标是：{index}")
 
-# 统计某元素在列表中的数量
-mylist3 = [1,1,2,2,3,3,4,4,5,5,6,6]
-count = mylist3.count(5)
-print(count)
+# 统计元素数量
+print(f"Python 出现次数：{name_list.count('Python')}")
+
+# 删除并接收被删除元素
+deleted_value = name_list.pop()
+print(f"删除的元素：{deleted_value}")
+print(f"删除后的列表：{name_list}")
+
+# 遍历列表
+for item in name_list:
+    print(item)
+
